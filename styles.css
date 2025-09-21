@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Make sure body takes full height of viewport */
+    margin: 0;                /* Remove default margin from body */
+    background-color: #c0c0cc; /* Optional: background for the body */
+    color: white;
+}
+
+.container {
+    background: linear-gradient(135deg, rgba(160, 72, 72, 1) 0%, rgba(72, 72, 160, 1) 100%);
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    font-family: 'Arial', sans-serif;
+
+    display: flex;
+    justify-content: center;  /* horizontally center content */
+    align-items: center;      /* vertically center content */
+
+    text-align: center;       /* ensuring multi-line text inside the container is centered */
+    padding: 20px;
+    
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: translateY(-5px);  /* Slight lift on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);  /* More intense shadow on hover */
+}
+
+
+
+#customMenuId {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    width: 200px;
+    height: auto;
+
+    position: absolute; /* This allows you to position it with left and top */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+#customMenuId li {
+    padding: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#customMenuId li:hover {
+    background-color: #555;
+}
