@@ -8,6 +8,11 @@ body {
     color: white;
 }
 
+/* Apply a smooth transition to the background color */
+body {
+  transition: background-color 0.5s ease; /* Smooth transition over 0.5 seconds */
+}
+
 .container {
     background: linear-gradient(135deg, rgba(160, 72, 72, 1) 0%, rgba(72, 72, 160, 1) 100%);
     width: 300px;
@@ -58,4 +63,8 @@ body {
 
 #customMenuId li:hover {
     background-color: #555;
+}
+
+.customMenuCl{
+    cursor: pointer;
 }
